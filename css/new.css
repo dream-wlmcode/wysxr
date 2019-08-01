@@ -1,0 +1,45 @@
+.mt10{
+	margin-top: 10px;
+}
+.mt20{
+	margin-top: 20px;
+}
+.smallFont{
+	font-size: 12px;
+}
+.brcor{
+    color:#e44d3a; 
+}
+.user-info > i {
+	right: 2px;
+}
+nav ul li.openPage{
+	cursor: pointer;
+}
+nav ul li.disable{
+	pointer-events: none;
+}
+.bsh1{
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 2.5rem;
+}
+.bsh2{
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 2rem;
+}
+.bsh3{
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 1.75rem;
+}
