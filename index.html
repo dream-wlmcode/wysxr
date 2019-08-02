@@ -1144,6 +1144,40 @@
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
 	<!-- modal e -->
+
+
+
+
+	<!-- 网站简介modal s -->
+	<div class="modal fade" id="netProfilesModal" tabindex="-1" role="dialog" aria-labelledby="netProfilesModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<h4 class="modal-title" id="netProfilesModalLabel">网站简介</h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<h4 class="bsh4">
+	      			<b class="brcor">这是一个帮助老乡找工作的社交平台，用户只要简单的注册就可以在上面发布要找的工作且附带简历，而企业也是直接注册可以搜索到要招聘的职员，这样就省去很多中间的环节，职员与企业直接握手，直接招聘，简单快捷。
+	      			</b>
+	      			<br/>
+	      			有望打造全会昌最专业的社交平台！望乡友支持，如果你是一名web开发者，请联系群主，为家乡会昌做出一份贡献！
+
+	      		</h4>
+	      	</div>
+	      	<div class="row">
+	      		<img src="images/HoiseAFlag.gif" alt="" />
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- 网站简介modal e -->
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/popper.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -1169,6 +1203,15 @@
 
 		//群公告模态框
 		$('#netNoticeModal').modal('show');
+
+
+		//弹出网站简介
+		$('#netNoticeModal').on('hidden.bs.modal', function (e) {
+		  $('#netProfilesModal').modal('show');
+		});
+
+
+
 	});
 </script>
 
