@@ -1201,16 +1201,21 @@
 		});
 
 
-		//群公告模态框
+		/*//群公告模态框
 		$('#netNoticeModal').modal('show');
 
 
 		//弹出网站简介
 		$('#netNoticeModal').on('hidden.bs.modal', function (e) {
 		  $('#netProfilesModal').modal('show');
+		});*/
+
+
+
+		$('#netProfilesModal').modal('show');
+		$('#netProfilesModal').on('hidden.bs.modal', function (e) {
+			$('#netNoticeModal').modal('show');
 		});
-
-
 
 	});
 </script>
