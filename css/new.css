@@ -10,8 +10,13 @@
 .brcor{
     color:#e44d3a; 
 }
-.header-data .logo img{
-    /*width:285px;*/
+.left_fingerC{
+    width: 255px;
+    height: 125px;
+}
+.left_animationC{
+    width: 208px;
+    height: 256px;
 }
 .user-info > i {
 	right: 2px;
