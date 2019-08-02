@@ -10,6 +10,9 @@
 .brcor{
     color:#e44d3a; 
 }
+.header-data .logo img{
+    /*width:285px;*/
+}
 .user-info > i {
 	right: 2px;
 }
