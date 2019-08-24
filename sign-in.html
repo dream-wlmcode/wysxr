@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>望月思乡人</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="icon" href="/images/logo.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="/css/animate.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/line-awesome.css">
+<link rel="stylesheet" type="text/css" href="/css/line-awesome-font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/lib/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="/lib/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+<link rel="stylesheet" type="text/css" href="/lib/artDialog/css/dialog.css">
+<link rel="stylesheet" type="text/css" href="/css/new.css">
+</head>
+
+
+<body class="sign-in">
+	
+
+	<div class="wrapper">
+		
+
+		<div class="sign-in-page">
+			<div class="signin-popup">
+				<div class="signin-pop">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="cmp-info">
+								<div class="cm-logo">
+									<img src="images/cm-logo.png" alt="">
+									<p>望月思乡人是一个全球同乡社交网络。</p>
+								</div><!--cm-logo end-->	
+								<img src="images/cm-main-img.png" alt="">			
+							</div><!--cmp-info end-->
+						</div>
+						<div class="col-lg-6">
+							<div class="login-sec">
+								<ul class="sign-control">
+									<li data-tab="tab-1"><a href="#" title="">登录</a></li>
+									<li data-tab="tab-2" class="current"><a href="#" title="">注册</a></li>
+								</ul>			
+								<div class="sign_in_sec" id="tab-1">
+									<h3>登录</h3>
+									<form>
+										<div class="row">
+											<div class="col-lg-12 no-pdd">
+												<div class="sn-field">
+													<input type="text" id="UserName_l" placeholder="请输入账号">
+													<i class="la la-user"></i>
+												</div><!--sn-field end-->
+											</div>
+											<div class="col-lg-12 no-pdd">
+												<div class="sn-field">
+													<input type="password" id="Password_1" placeholder="请输入密码">
+													<i class="la la-lock"></i>
+												</div>
+											</div>
+											<div class="col-lg-12 no-pdd">
+												<div class="checky-sec">
+													<div class="fgt-sec">
+														<input type="checkbox" id="c1">
+														<label for="c1">
+															<span></span>
+														</label>
+														<small>记住我</small>
+													</div><!--fgt-sec end-->
+													<a href="#" title="忘记密码?">忘记密码?</a>
+												</div>
+											</div>
+											<div class="col-lg-12 no-pdd">
+												<button type="button" id="signin">登录</button>
+											</div>
+										</div>
+									</form>
+								</div><!--sign_in_sec end-->
+								<div class="sign_in_sec current" id="tab-2">
+									<form>
+										<div class="row">
+											<div class="col-lg-12 no-pdd">
+												<div class="sn-field">
+													<select id="Sex">
+														<option value="0">请选择性别</option>
+														<option value="1">男</option>
+														<option value="2">女</option>
+													</select>
+													<i class="la la-transgender"></i>
+													<span><i class="fa fa-ellipsis-h"></i></span>
+												</div>
+											</div>
+											<div class="col-lg-12 no-pdd">
+												<div class="sn-field">
+													<input type="text" id="UserName" maxlength="10" placeholder="请输入账号">
+													<i class="la la-user"></i>
+												</div>
+											</div>
+											<div class="col-lg-12 no-pdd">
+												<div class="sn-field">
+													<input type="password" id="Password" maxlength="11" placeholder="请输入密码">
+													<i class="la la-lock"></i>
+												</div>
+											</div>
+											<!-- <div class="col-lg-12 no-pdd">
+												<div class="sn-field">
+													<input type="text" id="Phone" placeholder="请输入手机号">
+													<i class="la la-mobile"></i>
+												</div>
+											</div> -->
+											<div class="col-lg-12 no-pdd">
+												<div class="sn-field">
+													<input type="text" id="Email" maxlength="20" placeholder="请输入邮箱">
+													<i class="la la-envelope"></i>
+												</div>
+											</div>
+											<div class="col-lg-12 no-pdd">
+												<div class="sn-field">
+													<div class="input-group">
+														<input class="codeC" type="text" id="VerCode" maxlength="4" placeholder="请输入验证码">
+														<button type="button" class="button button-sm input-group-addon sendCodeBtn" id="sendCodeBtn">获取验证码</button>
+													</div>
+													<i class="la la-code"></i>
+												</div>
+											</div>
+											<div class="col-lg-12 no-pdd" style="display: none">
+												<div class="sn-field">
+													<input type="text" id="RequstKey" value="请求口令" placeholder="请输入请求口令">
+													<i class="la la-key"></i>
+												</div>
+											</div>
+											<div class="col-lg-12 no-pdd">
+												<div class="checky-sec st2">
+													<div class="fgt-sec">
+														<input type="checkbox" id="c2">
+														<label for="c2">
+															<span></span>
+														</label>
+														<small>是的，我理解并同意（<a href="javascript:;" id="Agreement">条款和协议</a>）。目前只服务江西省会昌县人在上海的社交及交流</small>
+													</div><!--fgt-sec end-->
+												</div>
+											</div>
+											<div class="col-lg-12 no-pdd">
+												<button type="button" id="register">注册</button>
+											</div>
+										</div>
+									</form>
+								</div>		
+							</div><!--login-sec end-->
+						</div>
+					</div>		
+				</div><!--signin-pop end-->
+			</div><!--signin-popup end-->
+			<div class="footy-sec">
+				<div class="container">
+					<ul>
+						<li><a href="#" title="">帮助中心</a></li>
+					</ul>
+					<p><img src="images/copy-icon.png" alt="">Copyright 2019</p>
+				</div>
+			</div><!--footy-sec end-->
+		</div><!--sign-in-page end-->
+
+
+	</div><!--theme-layout end-->
+
+
+<!-- modal s -->
+<div class="modal fade" id="netNoticeModal" tabindex="-1" role="dialog" aria-labelledby="netNoticeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<h4 class="modal-title" id="netNoticeModalLabel">本站公告（注：<b class="bgreencor">目前还是测试阶段</b>）</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<h4 class="bsh4">本网站只服务于QQ群<b class="brcor">《会昌人在上海》</b>有望打造全会昌最专业的社交平台！望乡友支持，如果你是一名web开发者，请联系群主QQ:1306803208或加入QQ群：499903478，为家乡会昌做出一份贡献！<b class="brcor">下面扫描二维码直接进入网站：</b></h4>
+      	</div>
+
+      	<div class="row text-center">
+      		<img src="images/HCRZSHcode.png" alt=""/>
+      		<img src="images/left_finger.gif" alt="" class="left_fingerC" />
+      		<img src="images/left_animation.gif" class="left_animationC" alt=""/>
+      		<!-- 扫描二维码直接打开网站 -->
+      	</div>
+
+      	<div class="row">
+      		<em class="smallFont">（本群创建于2015/10/24: 在外靠朋友，朋友，快点来吧，我们团结一致，积极向上，我爱我的家乡，爱你们。。）
+      		</em>
+
+      		<br/>
+      		1、本群的通用语言为普通话。 
+      		<br/>
+      		2、本群话题随便，健康向上即可。 
+      		<br/>
+      		3、本群禁止骂人、吵架、做人身攻击；禁止在群内发不良信息
+      	</div>
+
+      	<div class="row mt20">
+      		<h4 class="bsh4">
+      			本站服务协议：
+      		</h4>
+      		<br/>
+      		一、使用本站服务需遵守中国法律法规和当地法规，本站有权禁止违反法律法规的使用。
+      		<br/>
+      		二、本站中所提及的注册商标和商标属于各自所有人所有。
+      		<br/>
+      		三、本站所有内容仅供参考，无商业性获利行为，如有非法分子站内盗走素材，本站不承担任何法律责任。
+      	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- modal e -->
+
+
+
+
+<!-- 网站简介modal s -->
+<div class="modal fade" id="netProfilesModal" tabindex="-1" role="dialog" aria-labelledby="netProfilesModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<h4 class="modal-title" id="netProfilesModalLabel">网站简介</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<h4 class="bsh4">
+      			<b class="brcor">这是一个老乡社交平台，用户只要简单的注册就可以向自己的同乡表达自己的心情及想法。。
+      			</b>
+      			<br/>
+      			有望打造全会昌最专业的社交平台！望乡友支持，如果你是一名web开发者，请联系群主QQ:1306803208或加入QQ群：499903478，为家乡会昌做出一份贡献！
+
+      		</h4>
+      	</div>
+      	<div class="row">
+      		<img src="images/HoiseAFlag.gif" alt="" />
+      	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 网站简介modal e -->
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/popper.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/lib/slick/slick.min.js"></script>
+<script type="text/javascript" src="/lib/cookie/jquery.cookie.js"></script>
+<script type="text/javascript" src="/lib/artDialog/js/artDialog.js"></script>
+<script type="text/javascript" src="/lib/artDialog/js/sh_languages.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/api.js"></script>
+<script type="text/javascript" src="/js/block/sign.js"></script>
+</body>
+</html>

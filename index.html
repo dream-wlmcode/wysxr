@@ -44,38 +44,20 @@
 					<nav>
 						<ul id="navUl">
 							<li class="openPage">
-								<a href="index.html" title="">
+								<a href="/index.html" title="">
 									<span><img src="images/icon1.png" alt=""></span>
 									首页
 								</a>
 							</li>
-							<li>
-								<a href="companies.html" title="">
-									<span><img src="images/icon2.png" alt=""></span>
-									公司
-								</a>
-							</li>
-							<li>
-								<a href="projects.html" title="">
-									<span><img src="images/icon3.png" alt=""></span>
-									规划
-								</a>
-							</li>
-							<li>
-								<a href="profiles.html" title="">
+							<li class="openPage">
+								<a href="my-profile-feed.html" title="">
 									<span><img src="images/icon4.png" alt=""></span>
-									简介
+									个人中心
 								</a>
 								<ul>
-									<li><a href="user-profile.html" title="">User Profile</a></li>
-									<li><a href="my-profile-feed.html" title="">my-profile-feed</a></li>
+									<li><a href="my-profile-feed.html" title="个人资料">个人资料</a></li>
+									<li><a href="profile-account-setting.html" title="帐户设置">帐户设置</a></li>
 								</ul>
-							</li>
-							<li>
-								<a href="jobs.html" title="">
-									<span><img src="images/icon5.png" alt=""></span>
-									职业
-								</a>
 							</li>
 							<li>
 								<a href="#" title="" class="not-box-open">
@@ -178,7 +160,12 @@
 								</div><!--notification-box end-->
 							</li>
 						</ul>
+
 					</nav><!--nav end-->
+					<div class="enterd">
+						<span><a href="/sign-in.html?id=1">登录</a></span>
+						<span><a href="/sign-in.html?id=2">注册</a></span>
+					</div>
 					<div class="menu-btn">
 						<a href="#" title=""><i class="fa fa-bars"></i></a>
 					</div><!--menu-btn end-->
@@ -210,21 +197,12 @@
 									</div>
 								</li>
 							</ul>
-							<h3>自定义状态</h3>
-							<div class="search_form">
-								<form>
-									<input type="text" name="search">
-									<button type="submit">搜索</button>
-								</form>
-							</div><!--search_form end-->
 							<h3>设置</h3>
 							<ul class="us-links">
 								<li><a href="profile-account-setting.html" title="">账户设置</a></li>
-								<li><a href="#" title="">隐私</a></li>
-								<li><a href="#" title="">常见问题解答</a></li>
 								<li><a href="#" title="">条款和条件</a></li>
 							</ul>
-							<h3 class="tc"><a href="#" title="">注销</a></h3>
+							<h3 class="tc"><a href="/sign-in.html?id=1" title="">注销</a></h3>
 						</div><!--user-account-settingss end-->
 					</div>
 				</div><!--header-data end-->
@@ -1212,10 +1190,10 @@
 
 
 
-		$('#netProfilesModal').modal('show');
-		$('#netProfilesModal').on('hidden.bs.modal', function (e) {
-			$('#netNoticeModal').modal('show');
-		});
+		// $('#netProfilesModal').modal('show');
+		// $('#netProfilesModal').on('hidden.bs.modal', function (e) {
+		// 	$('#netNoticeModal').modal('show');
+		// });
 
 	});
 </script>

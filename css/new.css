@@ -1,3 +1,7 @@
+@charset "UTF-8";
+.minhC480{
+    min-height: 480px;
+}
 .mt10{
 	margin-top: 10px;
 }
@@ -61,4 +65,63 @@ nav ul li.disable{
     line-height: 1.1;
     color: inherit;
     font-size: 1.5rem;
+}
+
+
+/*导航 s*/
+nav{
+    width: 46%;
+}
+.enterd{
+    float: left;
+    margin-top: 22px;
+}
+.enterd span{
+    margin: 0 10px;
+}
+.enterd span a{
+    font-size: 14px;
+    color: #e5e5e5;
+}
+/*导航 e*/
+
+/*登录注册 s */
+.sign-control{
+    margin-bottom: 30px;
+}
+.sign_in_sec form .input-group input.codeC{
+    border-right:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.sign_in_sec form button.sendCodeBtn{
+    cursor: pointer;
+    margin-top: 0;
+    padding: 0 10px;
+    font-size: 12px;
 } 
+.sign_in_sec form button.sendCodeBtn.bg_gray{
+    background-color:#979393;
+}
+/*登录注册 e */
+
+
+
+/*密码设置 s*/
+.tab-pane .acc-setting form .input-group input.codeC{
+    border-right:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tab-pane .acc-setting form button.sendCodeBtn{
+    cursor: pointer;
+    margin-top: 0;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #fff;
+    background-color:#e44d3a; 
+} 
+.tab-pane .acc-setting form button.sendCodeBtn.bg_gray{
+    background-color:#979393;
+}
+/*密码设置 e*/
