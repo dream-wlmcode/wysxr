@@ -1,0 +1,165 @@
+@charset "UTF-8";
+.minhC480{
+    min-height: 480px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt20{
+	margin-top: 20px;
+}
+.smallFont{
+	font-size: 12px;
+}
+.brcor{
+    color:#e44d3a; 
+}
+.bgreencor{
+    color:#28a745; 
+}
+.left_fingerC{
+    width: 255px;
+    height: 125px;
+}
+.left_animationC{
+    width: 208px;
+    height: 256px;
+}
+.user-info > i {
+	right: 2px;
+}
+nav ul li.openPage{
+	cursor: pointer;
+}
+nav ul li.disable{
+	pointer-events: none;
+}
+.bsh1{
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 2.5rem;
+}
+.bsh2{
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 2rem;
+}
+.bsh3{
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 1.75rem;
+}
+.bsh4{
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 1.5rem;
+}
+
+
+/*导航 s*/
+nav{
+    width: 46%;
+}
+.enterd{
+    float: left;
+    margin-top: 22px;
+}
+.enterd span{
+    margin: 0 10px;
+}
+.enterd span a{
+    font-size: 14px;
+    color: #e5e5e5;
+}
+/*导航 e*/
+
+/*登录注册 s */
+.cm-logo .cm-logo-img{
+    cursor: pointer;
+}
+.sign-control{
+    margin-bottom: 30px;
+}
+.sign_in_sec form .input-group input.codeC{
+    border-right:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.sign_in_sec form button.sendCodeBtn{
+    cursor: pointer;
+    margin-top: 0;
+    padding: 0 10px;
+    font-size: 12px;
+} 
+.sign_in_sec form button.sendCodeBtn.bg_gray{
+    background-color:#979393;
+}
+/*登录注册 e */
+
+
+
+/*帐户设置 s*/
+.nav-tabs .nav-item{
+    cursor: default;
+}
+/*上传 s*/
+.cpp-fiel i.fas{
+    position: static;
+    top: 0;
+    left: 0;
+    font-size: inherit;
+    color: inherit;
+}
+.cpp-fiel .btn-file{
+    border:none;
+    background-color: #e44d3a;
+}
+.cpp-fiel .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+.cpp-fiel button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.cpp-fiel .close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+/*上传 e*/
+
+.tab-pane .acc-setting form .input-group input.codeC{
+    border-right:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tab-pane .acc-setting form button.sendCodeBtn{
+    cursor: pointer;
+    margin-top: 0;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #fff;
+    background-color:#e44d3a; 
+} 
+.tab-pane .acc-setting form button.sendCodeBtn.bg_gray{
+    background-color:#979393;
+}
+/*帐户设置 e*/
