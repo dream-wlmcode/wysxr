@@ -1,3 +1,57 @@
+var Key = $.cookie('Key');
+var State = $.cookie('State');
+var UserName = $.cookie('UserName');
+$(function(){
+    //顶部导航
+    if(Key != undefined){
+        $("#enterd").hide();
+        $("#user-account").show();
+
+        //获取小头像
+        $.ajax({
+            url: domainUrl + 'api/UserInfo/GetAvatarSmall',
+            type: "POST",
+            dataType: "json",
+            data: {RequstKey: Key,},
+            success:function (data) {
+                if (data.ResultCode == 0) {
+                    
+                }else{
+                    art.dialog({
+                        content:data.Message,
+                        cancel:false,
+                        fixed: true,
+                        lock: true,
+                        width: 200,
+                        ok:function(){}
+                    });
+                }
+            },
+            error: function(error) {
+                alert(error);
+            }
+        });
+        $("#user-account").find("a.userName").text(UserName);
+
+
+
+        $("#logout").click(function(event) {
+            $.cookie('Key', '', { expires: -1 });
+            $.cookie('State', '', { expires: -1 });
+            $.cookie('UserName', '', { expires: -1 });
+            window.location.href="/sign-in.html?id=1";
+        });
+    }else{
+        $("#enterd").show();
+        $("#user-account").hide();
+    }
+
+
+
+
+
+
+});
 /*获取参数*/
 function getQueryString(name) { 
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 

@@ -9,7 +9,7 @@ $(function(){
     //登录
     $("#signin").click(function(event) {
         var UserName = $("#UserName_l").val();
-        var Password = $("#UserName_l").val();
+        var Password = $("#Password_1").val();
         if($.trim(UserName).length == 0){
             art.dialog({
                 content:"请输入用户名",
@@ -34,6 +34,7 @@ $(function(){
             return; 
         }
 
+        console.log(Password);
 
         if(!isPasswd(Password)){
             art.dialog({
@@ -53,10 +54,10 @@ $(function(){
             dataType: "json",
             data: {UserName: UserName, Password:Password},
             success:function (data) {
-                if (data.code == 200) {
+                if (data.ResultCode == 0) {
                     // alert(data.msg);
                     art.dialog({
-                        content:data.msg,
+                        content:data.Message,
                         cancel:false,
                         fixed: true,
                         lock: true,
@@ -66,14 +67,20 @@ $(function(){
                             window.location.href = "/index.html";
                         }
                     });
-                    var token = data.token;
+                    var Key = data.Data.Key;
+                    var State = data.Data.State;
+                    var UserName = data.Data.UserName;
                     var inFifteenMinutes = new Date(new Date().getTime() + 8 * 60 * 60 * 1000);
-                    $.cookie('token', '', { expires: -1 });
-                    $.cookie('token', token, { expires: inFifteenMinutes});
+                    $.cookie('Key', '', { expires: -1 });
+                    $.cookie('Key', Key, { expires: inFifteenMinutes});
+                    $.cookie('State', '', { expires: -1 });
+                    $.cookie('State', State, { expires: inFifteenMinutes});
+                    $.cookie('UserName', '', { expires: -1 });
+                    $.cookie('UserName', UserName, { expires: inFifteenMinutes});
                     setCookie();
                 }else{
                     art.dialog({
-                        content:data.msg,
+                        content:data.Message,
                         cancel:false,
                         fixed: true,
                         lock: true,
@@ -295,6 +302,15 @@ $(function(){
                 if (data != "") {
                     if (data.ResultCode == 0){
                         console.log(data.Message);
+                        art.dialog({
+                            content:data.Message,
+                            cancel:false,
+                            fixed: true,
+                            lock: true,
+                            width: 200,
+                            ok:function(){}
+                        });
+                        windows.location.href="sign-in.html?id=1";
                     }else if(data.ResultCode == 2){
                         console.log(data.Message);
                         art.dialog({

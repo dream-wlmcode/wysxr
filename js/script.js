@@ -219,7 +219,7 @@ $(window).on("load", function() {
     //  ============ Notifications Open =============
 
     $(".not-box-open").on("click", function(){
-        $(this).next(".notification-box").toggleClass("active");
+        $(this).next(".notification-box").toggleClass("active").parents(".itemli").siblings('.itemli').find(".notification-box").removeClass('active');
     });
 
     // ============= User Account Setting Open ===========

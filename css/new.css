@@ -86,6 +86,9 @@ nav{
 /*导航 e*/
 
 /*登录注册 s */
+.cm-logo .cm-logo-img{
+    cursor: pointer;
+}
 .sign-control{
     margin-bottom: 30px;
 }
@@ -107,7 +110,42 @@ nav{
 
 
 
-/*密码设置 s*/
+/*帐户设置 s*/
+.nav-tabs .nav-item{
+    cursor: default;
+}
+/*上传 s*/
+.cpp-fiel i.fas{
+    position: static;
+    top: 0;
+    left: 0;
+    font-size: inherit;
+    color: inherit;
+}
+.cpp-fiel .btn-file{
+    border:none;
+    background-color: #e44d3a;
+}
+.cpp-fiel .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+.cpp-fiel button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.cpp-fiel .close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+/*上传 e*/
+
 .tab-pane .acc-setting form .input-group input.codeC{
     border-right:none;
     border-top-right-radius: 0;
@@ -124,4 +162,4 @@ nav{
 .tab-pane .acc-setting form button.sendCodeBtn.bg_gray{
     background-color:#979393;
 }
-/*密码设置 e*/
+/*帐户设置 e*/
