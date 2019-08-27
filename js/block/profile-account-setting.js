@@ -127,7 +127,7 @@ $(function(){
                             lock: true,
                             width: 200,
                             ok:function(){
-                              window.location.href="/sign-in.html?id=1";
+                              window.location.href="sign-in.html?id=1";
                             }
                         });
                     }
@@ -208,7 +208,7 @@ $(function(){
                             lock: true,
                             width: 200,
                             ok:function(){
-                              window.location.href="/sign-in.html?id=1";
+                              window.location.href="sign-in.html?id=1";
                             }
                         });
                     }else if(json.ResultCode == 2){
@@ -220,7 +220,7 @@ $(function(){
                             lock: true,
                             width: 200,
                             ok:function(){
-                              window.location.href="/sign-in.html?id=1";
+                              window.location.href="sign-in.html?id=1";
                             }
                         });
                     }

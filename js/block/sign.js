@@ -64,7 +64,7 @@ $(function(){
                         dblclick_hide:false,
                         width: 200,
                         ok:function(){
-                            window.location.href = "/index.html";
+                            window.location.href = "index.html";
                         }
                     });
                     var Key = data.Data.Key;
