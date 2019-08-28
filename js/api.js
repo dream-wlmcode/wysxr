@@ -1,2 +1,2 @@
 // 测试服
-var domainUrl = '//api.gerentianshi.top/';
+var domainUrl = 'http://api.gerentianshi.top/';
